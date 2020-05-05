@@ -1,0 +1,18 @@
+.login {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 10px;
+  background-color: white;
+  margin: auto;
+  margin-top: 100px;
+  width: 25em;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, .1);
+  min-height: 100px;
+}
+
+form#login {
+  margin-top: 2rem;
+}
