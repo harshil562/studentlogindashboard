@@ -1,10 +1,18 @@
 import React, { Component } from 'react'
+import { Cookies } from 'react-cookie';
+import { instanceOf } from 'prop-types';
+import { isEmpty } from 'lodash';
 import { Navbar, FormControl, Button, Nav, Form } from 'react-bootstrap';
+
 import CardWidget from './../../Widgets/CardWidget';
 import { naturalCompare } from '../Utils';
-import { isEmpty } from 'lodash';
+
 
 export default class Dashboard extends Component {
+
+  static propTypes = {
+    cookies: instanceOf(Cookies).isRequired
+  };
 
   constructor(props) {
     super(props);
