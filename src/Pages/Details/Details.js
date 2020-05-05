@@ -23,7 +23,18 @@ const Details = ({ location }) => {
 
 Details.propTypes = {
   location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired
+    pathname: PropTypes.string.isRequired,
+    state: PropTypes.shape({
+      student: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        student_id: PropTypes.number.isRequired,
+        marks: PropTypes.shape({
+          subject_1: PropTypes.number.isRequired,
+          subject_2: PropTypes.number.isRequired,
+          subject_3: PropTypes.number.isRequired
+        })
+      })
+    })
   })
 }
 

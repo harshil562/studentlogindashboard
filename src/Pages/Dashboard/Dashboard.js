@@ -96,7 +96,7 @@ export default class Dashboard extends Component {
             {
               !isEmpty(studentsData) && Object.values(studentsData).map(student => {
                 return (
-                  <div className="col-xs-12 .col-sm-6 col-md-4">
+                  <div key={student.student_id} className="col-xs-12 .col-sm-6 col-md-4">
                     <CardWidget student={student} />
                   </div>)
               })

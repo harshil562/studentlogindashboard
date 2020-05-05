@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -20,6 +21,18 @@ const CardWidget = ({ student }) => {
       </Card.Body>
     </Card>
   )
+}
+
+CardWidget.propTypes = {
+  student: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    student_id: PropTypes.number.isRequired,
+    marks: PropTypes.shape({
+      subject_1: PropTypes.number.isRequired,
+      subject_2: PropTypes.number.isRequired,
+      subject_3: PropTypes.number.isRequired
+    })
+  })
 }
 
 export default CardWidget;
