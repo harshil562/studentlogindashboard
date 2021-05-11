@@ -5,7 +5,7 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "glyphicons": "^0.2.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.1",
     "react-cookie": "^4.0.3",
